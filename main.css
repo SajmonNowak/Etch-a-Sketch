@@ -1,0 +1,156 @@
+:root {
+    --columns-rows:16;
+}
+
+
+#GamefieldDiv {
+    display: grid;
+    grid-template-columns: repeat(var(--columns-rows), 1fr);
+    grid-template-rows: repeat(var(--columns-rows), 1fr);
+    justify-items: stretch;
+    width : 650px;
+    height: 650px;
+    border: 10px solid;
+    border-color: #fca311 #fca311 #f1c47b #f1c47b;
+    border-radius: 5px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #14213d;
+    color: white;
+}
+
+.divContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 650px;
+}
+
+#GamefieldDiv {
+    flex-basis: 100%;
+    background-color: #e5e5e5;
+}
+
+#Bedienung {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px;
+    width:100%;
+    gap: 20px;
+    justify-items: center;
+    padding-top: 20px;
+
+}
+
+.button {
+    width:100px;
+    padding: 10px;
+    background-color: #fca311;
+    border-color: black;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #f1c47b ;
+    border-color: white;
+}
+
+
+/* Elements */
+
+#sizeDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 150px;
+    font-size: 50px;
+    background-color: #fca311;
+    padding: 10px;
+
+}
+
+
+#modeContainer {
+ display: flex;
+ font-size: 20px;
+}
+
+#modeContainer div {
+    padding: 2px;
+}
+
+#modeContainer label {
+    padding-left: 10px;
+}
+
+.lowerDiv {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    width:100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+#slider {
+    -webkit-appearance: none;
+    width: 500px;
+    background: #fca311;
+    border-radius: 20px;
+    color: red;
+    outline: none;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid black;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fca311;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid white;
+}
+
+
+.mode:hover:after {
+    background-color: #f1c47b ;
+}
+
+#credits {
+    position:absolute;
+    bottom: 0px;
+    right:50px;
+}

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+
+ <body>
+
+    <div class ="divContainer">
+    <div>
+        <div id="GamefieldDiv">
+    
+        </div>
+    </div>
+    
+    <div id="Bedienung" >
+
+    
+        <div id="modeContainer">
+            <form>
+                <div>
+                    <input type = "radio" id="standard" name="Mode" class='mode' data-mode="standardMode" checked>
+                    <label for="standard">Standard Mode</label>
+                </div>
+                <div>
+                    <input type = "radio" id="rainbow" class='mode' data-mode="rainbowMode" name="Mode">
+                    <label for="rainbow">Rainbow Mode</label>
+                </div>
+                <div>
+                    <input type="radio" id="dark" class='mode' data-mode= 'darkMode' name="Mode">
+                    <label for="dark">Dark Mode</label>
+                </div>
+                <div>
+                    <input type="radio" id="eraser" class='mode' data-mode='eraser' name="Mode">
+                    <label for="eraser">Eraser</label>
+                </div>
+            </form>
+        </div>
+
+        <div id="SizeDisplay"> 16 x 16 </div>
+
+        <div id ="ButtonContainer" >
+            <button id="clear" class="button">Clear </button>
+        </div>
+    
+        
+    <div class='lowerDiv'>
+        <div id="SliderDiv" >
+            <p> Change the size </p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="99" value="16" class="slider" id="slider">
+        </div>
+    </div>
+
+    <div>
+
+</div>
+</div>
+
+    <script src="main.js"></script>
+
+<p id="credits"> made by Sajmon Nowak</p>
+ </body>
+</html>
